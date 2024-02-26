@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {/*код выполняетс
    /*-------------------------------------------*/
 
    /*слайдер-----------------------------------------*/
-   
+
    const slider = () => {
       const sliderBtnNext = document.querySelector("#slider__btn-next"),
          sliderBtnPrev = document.querySelector("#slider__btn-prev"),
@@ -61,61 +61,61 @@ window.addEventListener('DOMContentLoaded', () => {/*код выполняетс
             sliderItem.forEach(item => {
                item.classList.remove(`slider-item-${item.id}`);
             });
-               sliderItem.forEach(item => {
-                  
-                  item.classList.add(`slider-item-${Number(item.id) - 1}`);
-               });
+            sliderItem.forEach(item => {
+
+               item.classList.add(`slider-item-${Number(item.id) - 1}`);
+            });
 
          }
-            });
-            sliderBtnPrev.addEventListener('click', e => {
-               if (e.target) {
-                  sliderItem.forEach(item => {
-                     item.classList.remove(`slider-item-${item.id}`);
-                     if (item.id == sliderItem.length) {
-                        item.id = 1;
-                     }
-                     if (item.id == 1) {
-                        item.id = sliderItem.length;
-                     }
-                     
-                     item.classList.add(`slider-item-${Number(item.id) + 1}`);
+      });
+      sliderBtnPrev.addEventListener('click', e => {
+         if (e.target) {
+            sliderItem.forEach(item => {
+               item.classList.remove(`slider-item-${item.id}`);
+               if (item.id == sliderItem.length) {
+                  item.id = 1;
+               }
+               if (item.id == 1) {
+                  item.id = sliderItem.length;
+               }
 
-                  });
+               item.classList.add(`slider-item-${Number(item.id) + 1}`);
+
+            });
          }
       });
 
    };
 
-/*slider();*/
+   /*slider();*/
 
-/*фанси бокс -----------------------------------*/
-const fansyBox = () => {
-   const sliderItem = document.querySelectorAll('.slider-item'),
-      body = document.querySelector('body'),
-      audio = new Audio('src/sound/fansy-box.mp3');
+   /*фанси бокс -----------------------------------*/
+   const fansyBox = () => {
+      const sliderItem = document.querySelectorAll('.slider-item'),
+         body = document.querySelector('body'),
+         audio = new Audio('src/sound/fansy-box.mp3');
 
-   sliderItem.forEach(item => {
-      item.addEventListener('click', e => {
-         /*e.stopPropagation();*/
-         item.classList.add('fansy-box-incr');
-         item.classList.remove('fansy-box-decr');
-         audio.play();
-      });
-   });
-   body.addEventListener('click', e => {
       sliderItem.forEach(item => {
-         if (e.target != item && item.classList.contains('fansy-box-incr')) {
-            item.classList.remove('fansy-box-incr');
-            item.classList.add('fansy-box-decr');
-         }
+         item.addEventListener('click', e => {
+            /*e.stopPropagation();*/
+            item.classList.add('fansy-box-incr');
+            item.classList.remove('fansy-box-decr');
+            audio.play();
+         });
       });
-      /*hideContentCollection(sliderItem, '.fansy-box', undefined);*/
-   });
-}
+      body.addEventListener('click', e => {
+         sliderItem.forEach(item => {
+            if (e.target != item && item.classList.contains('fansy-box-incr')) {
+               item.classList.remove('fansy-box-incr');
+               item.classList.add('fansy-box-decr');
+            }
+         });
+         /*hideContentCollection(sliderItem, '.fansy-box', undefined);*/
+      });
+   }
 
-fansyBox();
-/*------------------------------------------------------*/
+   fansyBox();
+   /*------------------------------------------------------*/
 
 
    /*смена картинок -------------------------*/
@@ -143,31 +143,31 @@ fansyBox();
 
    /*----------------------------------------------*/
 
-/* бургер --------------------------------------*/
+   /* бургер --------------------------------------*/
 
-const burger = () => {
+   const burger = () => {
 
-   const burgerBtn =  document.querySelector('.menu-burger__btn'),
-    burgerMenu = document.querySelector('.header__menu'),
-      burgerCloseImg = document.querySelector('.burger-open-img');
+      const burgerBtn = document.querySelector('.menu-burger__btn'),
+         burgerMenu = document.querySelector('.header__menu'),
+         burgerCloseImg = document.querySelector('.burger-open-img');
 
-burgerBtn.addEventListener('click', e => {
-   console.log(burgerMenu.style.display)
-   if (!burgerMenu.style.display || burgerMenu.style.display == 'none'){
-      burgerMenu.style.display = 'block';
-      burgerCloseImg.src = 'img/burger_close.png';
+      burgerBtn.addEventListener('click', e => {
+         console.log(burgerMenu.style.display)
+         if (!burgerMenu.style.display || burgerMenu.style.display == 'none') {
+            burgerMenu.style.display = 'block';
+            burgerCloseImg.src = 'img/burger_close.png';
+         }
+         else if (burgerMenu.style.display == 'block') {
+            burgerMenu.style.display = 'none';
+            burgerCloseImg.src = 'img/burger.png';
+         }
+
+      });
+
+
    }
-   else if (burgerMenu.style.display == 'block') {
-      burgerMenu.style.display = 'none';
-      burgerCloseImg.src = 'img/burger.png';
-   }
 
-});
-
-
-}
-
-burger();
+   burger();
 
 });
 
