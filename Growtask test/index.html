@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Growtask</title>
+   <link rel="stylesheet" href="style/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+   <link type="image/x-icon" rel="shortcut icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="script/script.js"></script>
+
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__container">
+         <div class="header__logo">
+            <img src="img/header_logo.png" alt="">
+         </div>
+         <div class="header__menu">
+            <li class="menu-list-item " ><a class="txt-color_grey" href="#txt-and-img">Текст и картинки</a></li>
+            <li class="menu-list-item"><a class="txt-color_grey" href="#slider">Пример слайдера</a></li>
+            <li class="menu-list-item"><a class="txt-color_grey" href="#btn-and-img">Кнопки и картинки</a></li>
+            <li class="menu-list-item"><a class="txt-color_grey" href="#question-and-answer">Вопрос-ответ</a></li>
+            <li class="menu-list-item"><button class="to-form__btn_blue" id="scroll-to-form">К форме</button></li>
+         </div>
+         <button class="menu-burger__btn"><img class="burger-open-img" src="img/burger.png" alt=""></button>
+      </div>
+
+   </header>
+   <main class="main">
+      <section class="section-1-skills">
+         <div class="section-1__container">
+            <div class="section-1-left">
+               <div class="section-1-left-top">
+                  <h1 class="section-1-left__h1">
+                     <p>Покажи нам чудеса</p>
+                     <p class="txt-color_blue">своей верстки</p>
+                  </h1>
+                  <p class="section-1-left__p font-size_20 font-weight_regular txt-color_grey">
+                     Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя всё
+                     получится.
+                  </p>
+               </div>
+               <div class="section-1-left__bottom bg-color_black">
+                  <div class="section-1-left__bottom-content">
+                     <div class="section-1-bottom__txt font-goth font-weight_bold font-size_20">
+                        <span class="txt-color_white font-goth font-size_20 font-weight_bold">Покажи скролл на</span>
+                        <span class="txt-color_blue">до формы:</span>
+                     </div>
+                     <button class="section-1-bottom__btn to-form__btn_blue" id="scroll-to-form">К форме</button>
+                  </div>
+               </div>
+            </div>
+            <div class="section-1-right">
+               <div class="section-1__left-img-container">
+                  <img class="section-1-img" src="img/notebook.jpg" alt="">
+                  <img class="section-1-img" src="img/black_and_green.jpg" alt="">
+               </div>
+               <div class="section-1__right-img-container">
+                  <img class="section-1-img" src="img/hands.jpg" alt="">
+               </div>
+
+
+            </div>
+
+         </div>
+
+
+      </section>
+
+      <section class="section-2-job bg-color_blue" id="txt-and-img">
+         <div class="section-2__container">
+            <div class="section-2-left">
+               <h2 class="section-2-left__h2">
+                  Про вакансию
+               </h2>
+               <p class="section-2-left__p1 font-weight_regular font-size_20 txt-color_grey">
+                  Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы, конечно же, поможем.
+               </p>
+               <p class="section-2-left__p2 font-weight_regular font-size_20 txt-color_grey">
+                  Напомним про условия:
+               </p>
+               <div class="section-2-left__condition-list-container">
+                  <div class="condition-list__field">
+                     <div class="condition-list__num font-goth font-size_56 txt-color_blue">20 000</div>
+                     <div class="condition-list__txt font-weight_regular txt-color_white">Твой оклад на время стажировки
+                        (Возможны премии)</div>
+                  </div>
+                  <div class="condition-list__field">
+                     <div class="condition-list__num font-goth font-size_56 txt-color_blue">5/2</div>
+                     <div class="condition-list__txt font-weight_regular txt-color_white">Рабочий график</div>
+                  </div>
+                  <div class="condition-list__field">
+                     <div class="condition-list__num font-goth font-size_56 txt-color_blue">8 ч</div>
+                     <div class="condition-list__txt font-weight_regular txt-color_white">Рабочий день</div>
+                  </div>
+               </div>
+            </div>
+            <div class="section-2-right">
+               <div class="section-2__img-container">
+                  <div>
+                     <img class="section-2__img" src="img/section-2_first_img.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="section-2__img" src="img/section-2_second_img.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="section-2__img" src="img/section-2_fird_img.jpg" alt="">
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+
+
+      </section>
+      <section class="section-3-slider" id="slider">
+         <div class="slider-header">
+            <h2 style="margin-left: 0;">Сверстай слайдер</h2>
+            <div class="slider__buttons">
+               <button class="slider__btn" id="slider__btn-prev"><img class="slider-btn__img" src="img/icon_prev.png" alt=""></button>
+               <button class="slider__btn" id="slider__btn-next"><img class="slider-btn__img" src="img/icon_next.png" alt=""></button>
+            </div>
+         </div>
+         <div class="slider__container ">
+            <div id="1" class="slider-item slider-item-1 ">
+               <div class="slider-item-bootom-field">
+                  <p>Северная корона</p>
+               </div>
+            </div>
+            <div id="2" class="slider-item slider-item-2">
+               <div class="slider-item-bootom-field">
+                  <p>Moscow barbering school</p>
+               </div>
+            </div>
+            <div id="3" class="slider-item slider-item-3">
+               <div class="slider-item-bootom-field">
+                  <p>Rh store</p>
+               </div>
+            </div>
+            <div id="4" class="slider-item slider-item-4">
+               <div class="slider-item-bootom-field">
+                  <p>Poolspecial</p>
+               </div>
+            </div>
+            <div id="5" class="slider-item slider-item-5">
+               <div class="slider-item-bootom-field">
+                  <p>Rh prod</p>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="section-4-images bg-color_blue" id="btn-and-img">
+         <div class="section-4-images__container">
+            <div class="section-4__img_big-cont">
+               <img id="1" class="section-4__img_big show" src="img/section-4_forest_img-1.jpg" alt="">
+               <img id="2" class="section-4__img_big hide" src="img/section-4_forest_img-2.jpg" alt="">
+               <img id="3" class="section-4__img_big hide" src="img/section-4_forest_img-3.jpg" alt="">
+            </div>
+            <div class="section-4__img_prev font-size_20 font-weight_regular txt-color_grey">
+               <div id="1" class="img_prev__item active-small__img">
+                  <div id="1" class="item__img">
+                     <img id="1" src="img/forest_img_1_prev.jpg" alt="">
+                  </div>
+                  <p id="1" class="item__txt">Картинка 1</p>
+               </div>
+               <div id="2" class="img_prev__item">
+                  <div id="2" class="item__img">
+                     <img id="2" src="img/forest_img_2_prev.jpg" alt="">
+                  </div>
+                  <p id="2"class="item__txt">Картинка 2</p>
+               </div>
+               <div id="3" class="img_prev__item">
+                  <div id="3" class="item__img">
+                     <img id="3" src="img/forest_img_3_prev.jpg" alt="">
+                  </div>
+                  <p id="3" class="item__txt">Картинка 3</p>
+               </div>
+
+            </div>
+
+         </div>
+
+      </section>
+      <section class="section-5-answers" id="question-answer">
+         <div class="section-5-answers__container">
+            <div class="answers-header">
+               <h2>Ответы на вопросы</h2>
+            </div>
+            <div class="question-items__container">
+               <div class="question__item">
+                  <h3 class="question__txt">У вас много проектов?</h3>
+                  <button class="plus__btn"><img class="plus__img" src="img/plus.png" alt=""></button>
+               </div>
+               <div class="question__item">
+                  <h3 class="question__txt">Есть ли карьерный рост</h3>
+                  <button class="plus__btn"><img class="plus__img" src="img/plus.png" alt=""></button>
+               </div>
+               <div class="question__item">
+                  <h3 class="question__txt">У вас большой штат?</h3>
+                  <button class="plus__btn"><img class="plus__img" src="img/plus.png" alt=""></button>
+               </div>
+               <div class="question__item">
+                  <h3 class="question__txt">Какие цели у вашей студии?</h3>
+                  <button class="plus__btn"><img class="plus__img" src="img/plus.png" alt=""></button>
+               </div>
+
+            </div>
+
+         </div>
+
+      </section>
+
+   </main>
+
+
+   <footer class="footer bg-color_black">
+      <div class="feedback-form__container">
+         <img src="img/green-circle_right-2.png" alt="" style="
+               position: absolute;
+               top: 0%;
+               right: 0%;
+               border-radius: 8px;
+               ">
+         <img src="img/green_circle_right-1.png" alt="" style="
+               position: absolute;
+               top: 0%;
+               right: 0%;
+               border-radius: 8px;">
+         <div class="feedback-form-content">
+            <div class="feedback-form__left-container txt-color_white">
+               <div class="feedback-form__txt">
+                  <h2 class="feedback-form-header">Форма ОС</h2>
+                  <p class="font-weight_regular">Сверстай форму обратной связи. Будет круто, если заявку будут приходить
+                     сюда: a@growtask.ru</p>
+               </div>
+               <div class="feedback-form__social-container">
+                  <h3 class="font-goth">Не забудь вставить соц.сети</h3>
+                  <div class="icons-social__container">
+                     <button class="vk__button bg-color_white"><a href="https://vk.com/growtask"><img class="vk"
+                              src="img/vk.png" alt=""></a></button>
+                     <button class="tg__button bg-color_white"><a href="https://t.me/growtask "><img class="tg"
+                              src="img/tg.png" alt=""></a></button>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+         <form class="feedback-form__form bg-color_white">
+            <div class="form-content">
+               <div class="input-field__container font-weight_regular txt-color_grey">
+                  <input class="input__field" required placeholder="Напишите вопрос*" type="text">
+                  <input class="input__field" required placeholder="Телефон или почта*" type="text">
+                  <input class="input__field f" required placeholder="Твое имя*" type="text">
+                  <input class="input__field" required placeholder="Соц.сеть или мессенджер" type="text">
+                  <div class="accept-data font-size_14">
+                     <button style="width: 164px;" class="to-form__btn_blue">Отправить заявку</button>
+                     <label><input type="checkbox">Согласие с политикой</label>
+                  </div>
+               </div>
+
+
+            </div>
+
+         </form>
+
+      </div>
+
+
+   </footer>
+</body>
+
+</html>
