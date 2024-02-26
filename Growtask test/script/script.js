@@ -152,13 +152,16 @@ const burger = () => {
       burgerCloseImg = document.querySelector('.burger-open-img');
 
 burgerBtn.addEventListener('click', e => {
-   burgerMenu.style.display = 'block';
-   if (burgerMenu.style.display == 'block') {
+   console.log(burgerMenu.style.display)
+   if (!burgerMenu.style.display || burgerMenu.style.display == 'none'){
+      burgerMenu.style.display = 'block';
       burgerCloseImg.src = 'img/burger_close.png';
    }
-   if (burgerCloseImg.src == 'img/burger_close.png'){
-      
+   else if (burgerMenu.style.display == 'block') {
+      burgerMenu.style.display = 'none';
+      burgerCloseImg.src = 'img/burger.png';
    }
+
 });
 
 

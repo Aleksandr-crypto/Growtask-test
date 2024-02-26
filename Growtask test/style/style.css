@@ -754,10 +754,7 @@ animation: ani-incr 1.5s forwards;
                            height: 420px;
                         }
 
-
-
 }
-
 
 @media (min-resolution: 180dpi) {
    .header__container{
@@ -770,6 +767,7 @@ animation: ani-incr 1.5s forwards;
    }
 
    .header__menu{
+      content: 'Меню';
       left: 80%;
       position: absolute;
       display: none;
@@ -777,15 +775,31 @@ animation: ani-incr 1.5s forwards;
       width:374px;
        height:504px;
         padding: 20px, 16px, 80px, 16px;
-         gap: 40px;
          background: white;
-
-box-shadow: 0px 0px 25px 0px #05191914;
-
+         box-shadow: 0px 0px 25px 0px #05191914;
+   li{
+            margin-left: 20px;
+         }
    }
-   
+
+       .header__menu:before {
+          content: 'Меню';
+          margin: 20px;
+       }
    .menu-list-item{
-      margin-top: 30px;
+      margin-top: 50px;
    }
+      .to-form__btn_in-burger {
+         width: 100%;
+         max-width: 334px;
+         margin: auto;
    }
-
+ .social-in-burger{
+ box-shadow: 0px 0px 25px 0px #05191914;
+ margin-left: 20px;
+ }
+  .box-shadow{
+   box-shadow: 0px 0px 25px 0px #05191914;
+  }
+  
+}
